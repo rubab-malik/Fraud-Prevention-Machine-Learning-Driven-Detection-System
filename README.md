@@ -1,6 +1,9 @@
 # Project_4
 Machine Learning
 
+![images](https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg)
+
+
 # IEEE-CIS Fraud Detection
 ### Can you detect fraud from customer transactions?
 ### Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
@@ -16,6 +19,9 @@ We decided to explore this dataset and build models to detect online fraud. Our 
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 - The distribution of target variable **'isFraud'** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
+
+## Dataset
+The data is broken into two files **identity.csv** and **transaction.csv**, which are joined by TransactionID. Not all transactions have corresponding identity information.
 
 **The libraries used are**:  
 - numpy
