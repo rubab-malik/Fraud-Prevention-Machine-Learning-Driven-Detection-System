@@ -51,5 +51,5 @@ After creating some baseline models we stick with Random Forests as it was givin
 - Imbalanced isFraud Variable
 
 
-
-Data source: https://www.kaggle.com/competitions/ieee-fraud-detection/data
+#### The datasets are too large to load into Github. 
+To run our code, download the data from Data source: https://www.kaggle.com/competitions/ieee-fraud-detection/data
