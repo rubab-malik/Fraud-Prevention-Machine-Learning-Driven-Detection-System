@@ -54,6 +54,58 @@ After creating some baseline models we stick with Random Forests as it was givin
 #### The datasets are too large to load into Github. 
 To run our code, download the data from Data source: https://www.kaggle.com/competitions/ieee-fraud-detection/data
 
+## Fraud Detection Project
+This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
+
+**Table of Contents**
+Introduction
+Dataset Description
+Data Preprocessing
+Feature Scaling
+Model Training and Evaluation
+Dependencies
+Running the Project
+deployment with streamlit
+
+
+
+
+#### Introduction
+Fraud detection is a crucial aspect of modern financial systems, as it ensures the security and integrity of transactions. This project demonstrates the application of machine learning techniques to identify fraudulent transactions using a dataset from the IEEE-CIS Fraud Detection Kaggle competition.
+
+#### Dataset Description
+The dataset consists of identity and transaction data, each having separate files for train and test data. The identity data includes information about the user, such as device type, browser, and IP address. The transaction data contains details about each transaction, including the transaction amount, product code, and card information.
+
+The dataset can be downloaded from here.
+The [IEEE-CIS Fraud Detection competition](https://www.kaggle.com/c/ieee-fraud-detection/overview).
+#### Data Preprocessing
+To prepare the data for modeling, several preprocessing steps are performed:
+
+Loading the data: The identity and transaction data are loaded from CSV files using pandas.
+
+Merging the datasets: The identity and transaction datasets are merged on the "TransactionID" column using a left join to ensure that all transaction data is retained.
+
+Handling missing values: Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
+
+Handling infinity values: Infinity values are replaced with NaN.
+
+Filling NaN values: NaN values are filled with the mean of each column.
+
+Storing cleaned data: The cleaned data is saved to an SQLite database for easier access and retrieval during model training and evaluation.
+
+#### Feature Scaling
+Feature scaling is performed to normalize the data using the StandardScaler from scikit-learn. This step ensures that all features have the same scale, which helps improve the performance of machine learning models, particularly those sensitive to feature scales, such as gradient-based methods.
+
+####  Model Training and Evaluation
+Several machine learning models are trained and evaluated on the preprocessed data, including:
+
+
+Decision Tree
+AdaBoost
+Random Forest
+XGBoost
+The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and accuracy scores. The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.
+
 #### Streamlit Deployment
 In addition to the Jupyter Notebook implementation, the project can be deployed using Streamlit, a popular framework for building data-driven web applications. The Streamlit application can interactively display the performance metrics of different models and show the predictions made by the best-performing model.
 
