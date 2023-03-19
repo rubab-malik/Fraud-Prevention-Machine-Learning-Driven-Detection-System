@@ -53,3 +53,19 @@ After creating some baseline models we stick with Random Forests as it was givin
 
 #### The datasets are too large to load into Github. 
 To run our code, download the data from Data source: https://www.kaggle.com/competitions/ieee-fraud-detection/data
+
+#### Streamlit Deployment
+In addition to the Jupyter Notebook implementation, the project can be deployed using Streamlit, a popular framework for building data-driven web applications. The Streamlit application can interactively display the performance metrics of different models and show the predictions made by the best-performing model.
+
+To deploy the project with Streamlit, follow these steps:
+
+Install Streamlit using the following command:
+
+pip install streamlit
+Create a new Python script named app.py and adapt the existing code to work with Streamlit. Use Streamlit commands to load the data, train the models, and display the performance metrics and predictions.
+
+Run the Streamlit application using the following command:
+
+streamlit run app.py
+Open the web application in the browser using the URL provided by Streamlit. We can interact with the application to explore the dataset, model performance metrics, and predictions made by the best-performing model (XGBoost in this case).
+By deploying this project with Streamlit, We create an interactive web application that allows users to explore the data and understand the performance of various models more effectively. 
