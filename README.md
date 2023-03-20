@@ -15,13 +15,13 @@ The [IEEE-CIS Fraud Detection competition](https://www.kaggle.com/c/ieee-fraud-d
 We decided to explore this dataset and build models to detect online fraud. Our Random Forest model was able to reach a value of `0.995` on the cleaned dataset.
 
 ## **Exploratory Data Analysis (EDA)**
-- An observation that was immediately apparent is the imbalanced nature of the data. This shows that 'TransactionDT' is a timedelta gap, not a timestamp.
+- An observation that was immediately apparent is the imbalanced nature of the data. This shows that `TransactionDT` is a timedelta gap, not a timestamp.
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Columns not only had a high amount of missing data, but their distributions also were not normally distributed.
-- The distribution of target variable **'isFraud'** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
+- The distribution of target variable **`isFraud`** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
 
 ## Dataset
-The data is broken into two files **identity.csv** and **transaction.csv**, which are joined by TransactionID. Not all transactions have corresponding identity information.
+The data is broken into two files **`identity.csv`** and **`transaction.csv`**, which are joined by TransactionID. Not all transactions have corresponding identity information.
 
 **The libraries used are**:  
 - numpy
