@@ -116,32 +116,43 @@ To deploy the project with Streamlit, follow these steps:
 - Dataset size and complexity made hyperparameter tuning
 
 ## Repository Contents
+  
 The repository is organized into the following directories and files:  
-
+  
 **README.md:**
   - This file, containing an overview of the project, instructions, and a description of the repository contents.  
+  
 **code:** 
   - Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.  
+  
 **Final Notebooks: **  
   - Folder containing the final versions of the Jupyter notebooks used in the project.  
+  
 **Test notebooks: **  
   - Folder containing the test notebooks used during the project development.  
+  
 **Streamlit App code:**  
   - Folder containing the Streamlit app code for deploying the XGBoost classifier.  
+  
 **Presentations Slides **  
   - Predicting Fraudulent Online Transactions.pdf: PDF file containing the presentation slides.  
+  
 **Images: **  
   Folder containing images used in the project.  
+  
 **SQL files:**  
   Folder containing SQL files related to the project.  
+  
 **.ipynb_checkpoints:**  
   Folder containing Jupyter notebook checkpoints.  
+  
 **clean_data_code_processed.csv.ipynb:**  
   - Jupyter notebook for processing the cleaned data.  
-**cleaned_data_script.h5.ipynb:** 
+  
+**cleaned_data_script.h5.ipynb:**  
   - Jupyter notebook containing the cleaned data script.  
 
 ## Google-Drive-Data-Folder"
-- Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder. <a bit.ly/3z8kZaJ</a>
+- Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this [Google Drive folder](bit.ly/3z8kZaJ).
 
 
