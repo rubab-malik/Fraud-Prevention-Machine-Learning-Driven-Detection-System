@@ -3,7 +3,7 @@
 #### <p align="center">
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
 
-<a name="google-drive-data-folder"
+## google-drive-data-folder"
 Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.**></a>
 
 
@@ -24,7 +24,7 @@ Model Performance Metrics****
 Model Development with Streamlit
 Key Takeaways
 Google Drive Data Folder
-<a name="introduction"></a>
+
 
 ## Introduction
 
@@ -99,6 +99,16 @@ The project explores various machine learning models, including:
   - Random Forest
   - XGBoost
 The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and classification report.The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.
+
+** Hyperparameter Tuning
+GridSearchCV is attempted for RandomForest and XGBoost classifiers. However, due to computational limitations, the tuning process could not be completed. The XGBoost classifier with built-in regularization techniques (L1, L2, and max depth constraints) is used for real-time fraud detection with Streamlit.**
+
+
+
+** Model Performance Metrics
+The models' performance is compared using ROC AUC scores and classification reports.**
+
+
 
 #### Model Development with Streamlit 
 In addition to the Jupyter Notebook implementation, the project can be deployed using Streamlit, a popular framework for building data-driven web applications. The Streamlit application can interactively display the performance metrics of different models and show the predictions made by the best-performing model.
