@@ -1,17 +1,14 @@
-# Project_4 Machine Learning
+# Project_4 Fraud Detection System For Online Transaction (Using Machine Learning)
 
 #### <p align="center">
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
-
-## google-drive-data-folder"
-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.**></a>
-
-
-# Fraud Detection System For Online Transaction
 ##### Can you detect fraud from customer transactions?
 #####  Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
 
-## Applying RandomForest and XGBoost for Fraud Detection and Developed with Streamlit
+## Google-Drive-Data-Folder"
+Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.></a>
+
+## Applying RandomForest and XGBoost for Fraud Detection and Developed with Streamlit:
 This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
 
 ## Table of Contents
@@ -19,12 +16,13 @@ Introduction
 Data Acquisition and Exploration
 Data Preprocessing
 Model Selection and Evaluation
-****Hyperparameter Tuning  
-Model Performance Metrics****
+****Model Performance Metrics  
+Hyperparameter Tuning  
+****
 Model Development with Streamlit
-Key Takeaways
-Google Drive Data Folder
-
+Key Takeaways  
+Challenges Faced
+Repository Contents
 
 ## Introduction
 
@@ -142,5 +140,10 @@ Sparsity of the dataset
 A large number of missing values
 Imbalanced 'isFraud' variable
 Dataset size and complexity made hyperparameter tuning
+
+Repository Contents
+README.md: This file, containing an overview of the project and instructions.
+code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
+presentation/: Folder containing the project presentation slides.
 
 
