@@ -16,26 +16,35 @@ Google Drive Data Folder link:
 This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
 
 **Table of Contents**
-Introduction
-Data Acquisition and Exploration
-Data Preprocessing
-Feature Scaling
-Model Selection and Evaluation
-**Model Performance Metrics**
-**Hyperparameter Tuning**
-Model Development with Streamlit
-Key Takeaways
-deployment with streamlit
+Introduction  
+Data Acquisition and Exploration  
+Data Preprocessing  
+Feature Scaling  
+Model Selection and Evaluation  
+**Model Performance Metrics**  
+**Hyperparameter Tuning**  
+Model Development with Streamlit  
+Key Takeaways  
+deployment with streamlit  
 
 ## Introduction
 
-The [IEEE-CIS Fraud Detection competition](https://www.kaggle.com/c/ieee-fraud-detection/overview) was held on Kaggle during 2019. The goal is to identify whether each online transaction is `fraud` or `not fraud` . In this project, we will detect online fraudulent transactions using machine learning techniques. Fraud detection is a crucial aspect of modern financial systems, as it ensures the security and integrity of transactions. This project demonstrates the application of machine learning techniques to identify fraudulent transactions using a dataset from the IEEE-CIS Fraud Detection Kaggle competition.
+This project aims to tackle the challenge of online transaction fraud detection and emphasize the significance of timely and accurate fraud identification. The goal is to create a machine learning model to assess the probability of fraudulent transactions (classification problem).
 
-## **Exploratory Data Analysis (EDA)**
-- An observation that was immediately apparent is the imbalanced nature of the data. This shows that `TransactionDT` is a timedelta gap, not a timestamp.
-- Dataset has a very high percentage of missing values, especially the V columns.
-- Columns not only had a high amount of missing data, but their distributions also were not normally distributed.
-- The distribution of target variable **`isFraud`** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
+## Data Acquisition and Exploration
+
+The dataset is sourced from [IEEE-CIS Fraud Detection competition](https://www.kaggle.com/c/ieee-fraud-detection/overview) Kaggle competition. It consists of transactional and identity data, with various features and a binary target variable (isFraud).
+
+
+## Data Preprocessing   
+**To prepare the data for modeling, several preprocessing steps are performed:**
+
+Loading the data: The identity and transaction data are loaded from CSV files using pandas.
+Merging the datasets: The identity and transaction datasets are merged on the TransactionID column using a left join to ensure that all transaction data is retained.
+Handling missing values: Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
+Handling infinity values: Infinity values are replaced with NaN.
+Filling NaN values: NaN values are filled with the mean of each column.
+Storing cleaned data: The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.
 
 ## Dataset Description
 The data is broken into two files **`identity.csv`** and **`transaction.csv`**, each having separate files for train and test data which are merged on the `TransactionID` column. Not all transactions have corresponding identity information. The identity data includes information about the user, such as device type, browser, and IP address. The transaction data contains details about each transaction, including the transaction amount, product code, and card information.
