@@ -1,32 +1,30 @@
-# Project_4
-Machine Learning
+# Project_4 Machine Learning
 
-<p align="center">
+#### <p align="center">
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
-</p>
-<p align="center">
-**Google Drive Data Folder
-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.**
-</p>
+
+<a name="google-drive-data-folder"
+Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.**></a>
+
 
 # Fraud Detection System For Online Transaction
-### Can you detect fraud from customer transactions?
-### Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
+##### Can you detect fraud from customer transactions?
+#####  Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
 
 ## Applying RandomForest and XGBoost for Fraud Detection and Developed with Streamlit
 This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
 
-**Table of Contents**
-Introduction  
-Data Acquisition and Exploration  
-Data Preprocessing  
-Feature Scaling  
-Model Selection and Evaluation  
-**Model Performance Metrics**  
-**Hyperparameter Tuning**  
-Model Development with Streamlit  
-Key Takeaways  
-deployment with streamlit  
+## Table of Contents
+Introduction
+Data Acquisition and Exploration
+Data Preprocessing
+Model Selection and Evaluation
+****Hyperparameter Tuning  
+Model Performance Metrics****
+Model Development with Streamlit
+Key Takeaways
+Google Drive Data Folder
+<a name="introduction"></a>
 
 ## Introduction
 
@@ -36,18 +34,6 @@ This project aims to tackle the challenge of online transaction fraud detection 
 
 The dataset is sourced from [IEEE-CIS Fraud Detection competition](https://www.kaggle.com/c/ieee-fraud-detection/overview) Kaggle competition. It consists of transactional and identity data, with various features and a binary target variable (isFraud).
 
-
-## Data Preprocessing   
-**To prepare the data for modeling, several preprocessing steps are performed:**
-
-Loading the data: The identity and transaction data are loaded from CSV files using pandas.
-Merging the datasets: The identity and transaction datasets are merged on the TransactionID column using a left join to ensure that all transaction data is retained.
-Handling missing values: Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
-Handling infinity values: Infinity values are replaced with NaN.
-Filling NaN values: NaN values are filled with the mean of each column.
-Storing cleaned data: The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.
-
-## Dataset Description
 The data is broken into two files **`identity.csv`** and **`transaction.csv`**, each having separate files for train and test data which are merged on the `TransactionID` column. Not all transactions have corresponding identity information. The identity data includes information about the user, such as device type, browser, and IP address. The transaction data contains details about each transaction, including the transaction amount, product code, and card information.
 
 #### The datasets are too large to load into Github. 
@@ -59,6 +45,26 @@ To run our code, the dataset can be downloaded from here [IEEE-CIS Fraud Detecti
 - matplotlib
 - seaborn
 - sklearn
+
+
+## Data Preprocessing   
+
+**To prepare the data for modeling, several preprocessing steps are performed:**
+
+**Loading the data**
+The identity and transaction data are loaded from CSV files using pandas.
+**Merging the datasets** The identity and transaction datasets are merged on the TransactionID column using a left join to ensure that all transaction data is retained.
+**Handling missing values:**
+Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
+**Handling infinity values**
+Infinity values are replaced with NaN.
+**Filling NaN values:**
+NaN values are filled with the mean of each column.
+**Storing cleaned data:**
+The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.
+
+
+
 
 **Missing Values**
 - Around 414 features contain missing values.
