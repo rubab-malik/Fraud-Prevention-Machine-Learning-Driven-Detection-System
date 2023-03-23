@@ -125,10 +125,10 @@ The repository is organized into the following directories and files:
 **code:** 
   - Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.  
   
-**Final Notebooks: **  
+**Final Notebooks:**  
   - Folder containing the final versions of the Jupyter notebooks used in the project.  
   
-**Test notebooks: **  
+**Test notebooks:**  
   - Folder containing the test notebooks used during the project development.  
   
 **Streamlit App code:**  
@@ -138,13 +138,13 @@ The repository is organized into the following directories and files:
   - Predicting Fraudulent Online Transactions.pdf: PDF file containing the presentation slides.  
   
 **Images: **  
-  Folder containing images used in the project.  
+  - Folder containing images used in the project.  
   
 **SQL files:**  
-  Folder containing SQL files related to the project.  
+  -Folder containing SQL files related to the project.  
   
 **.ipynb_checkpoints:**  
-  Folder containing Jupyter notebook checkpoints.  
+  - Folder containing Jupyter notebook checkpoints.  
   
 **clean_data_code_processed.csv.ipynb:**  
   - Jupyter notebook for processing the cleaned data.  
