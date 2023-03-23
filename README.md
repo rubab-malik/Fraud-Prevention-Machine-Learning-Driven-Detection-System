@@ -141,7 +141,8 @@ The repository is organized into the following directories and files:
   - Folder containing images used in the project.  
   
 **SQL files:**  
-  -Folder containing SQL files related to the project.  
+
+  - Folder containing SQL files related to the project.  
   
 **.ipynb_checkpoints:**  
   - Folder containing Jupyter notebook checkpoints.  
