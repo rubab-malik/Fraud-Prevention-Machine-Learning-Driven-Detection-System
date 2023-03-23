@@ -11,9 +11,9 @@ Introduction
 Data Acquisition and Exploration  
 Data Preprocessing  
 Model Selection and Evaluation  
-**Model Performance Metrics**
-**Hyperparameter Tuning**
-Model Development with Streamlit
+**Model Performance Metrics**  
+**Hyperparameter Tuning**  
+Model Development with Streamlit  
 Key Takeaways  
 Challenges Faced  
 Repository Contents
@@ -45,42 +45,20 @@ To run our code, the dataset can be downloaded from here [IEEE-CIS Fraud Detecti
 
 **To prepare the data for modeling, several preprocessing steps are performed:**
 
-**Loading the data**
-The identity and transaction data are loaded from CSV files using pandas.
-**Merging the datasets** The identity and transaction datasets are merged on the TransactionID column using a left join to ensure that all transaction data is retained.
-**Handling missing values:**
-Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
+**Loading the data**  
+-The identity and transaction data are loaded from CSV files using pandas.  
+**Merging the datasets**  
+-The identity and transaction datasets are merged on the TransactionID column using a left join to ensure that all transaction data is retained.  
+**Handling missing values:**  
+-Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.  
 **Handling infinity values**
-Infinity values are replaced with NaN.
-**Filling NaN values:**
-NaN values are filled with the mean of each column.
+-Infinity values are replaced with NaN.  
+**Filling NaN values:**  
+-NaN values are filled with the mean of each column.  
 **Storing cleaned data:**
-The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.
-
-
-
-
-**Missing Values**
-- Around 414 features contain missing values.
-- Top features containing missing values.
-
+-The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.  
 **Label Encoding**
 - Convert string, category, object type variables to integers type.
-
-#### Data Preprocessing
-To prepare the data for modeling, several preprocessing steps are performed:
-
-  - *Loading the data:* The `identity` and `transaction` data are loaded from CSV files using pandas.
-
-  - *Merging the datasets:* The `identity` and `transaction` datasets are merged on the `TransactionID` column using a left join to ensure that all transaction data is retained.
-
-  - *Handling missing values:* Columns with more than 40% missing values are dropped from the dataset. For the remaining columns, missing values are imputed with the mean of each column.
-
-  - *Handling infinity values:* Infinity values are replaced with NaN.
-
-  - *Filling NaN values:* NaN values are filled with the mean of each column.
-
-  - *Storing cleaned data:* The cleaned data is saved to a SQLite database for easier access and retrieval during model training and evaluation.
 
 #### Feature Scaling
 Feature scaling is performed to normalise the data using the StandardScaler from scikit-learn. This step ensures that all features have the same scale, which helps improve the performance of machine learning models, particularly those sensitive to feature scales, such as gradient-based methods.
@@ -92,19 +70,16 @@ The project explores various machine learning models, including:
   - AdaBoost
   - Random Forest
   - XGBoost
-The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and classification report.The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.
-
-** Hyperparameter Tuning
-GridSearchCV is attempted for RandomForest and XGBoost classifiers. However, due to computational limitations, the tuning process could not be completed. The XGBoost classifier with built-in regularization techniques (L1, L2, and max depth constraints) is used for real-time fraud detection with Streamlit.**
-
-
+The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and classification report.The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.  
 
 ** Model Performance Metrics
 The models' performance is compared using ROC AUC scores and classification reports.**
 
+** Hyperparameter Tuning**  
+GridSearchCV is attempted for RandomForest and XGBoost classifiers. However, due to computational limitations, the tuning process could not be completed. The XGBoost classifier with built-in regularization techniques (L1, L2, and max depth constraints) is used for real-time fraud detection with Streamlit.**
 
 
-#### Model Development with Streamlit 
+## Model Development with Streamlit 
 In addition to the Jupyter Notebook implementation, the project can be deployed using Streamlit, a popular framework for building data-driven web applications. The Streamlit application can interactively display the performance metrics of different models and show the predictions made by the best-performing model.
 
 To deploy the project with Streamlit, follow these steps:
@@ -121,27 +96,27 @@ To deploy the project with Streamlit, follow these steps:
   - Open the web application in the browser using the URL provided by Streamlit. We can interact with the application to explore the dataset, model performance metrics, and predictions made by the best-performing model (XGBoost in this case).
 
 ## Key Takeaways
-Request more instances of fraudulent transactions from the organization to improve model training and prediction accuracy.  
-Address imbalanced dataset challenges with techniques such as oversampling, undersampling, or using cost-sensitive learning.    
-Optimize computational resources and training times by leveraging scalable solutions like Apache Spark or distributed computing.
-Seek clarity on column names to potentially merge related variables, inform feature engineering, and improve model interpretability.  
-#### #Repository Contents
+-Request more instances of fraudulent transactions from the organization to improve model training and prediction accuracy.  
+-Address imbalanced dataset challenges with techniques such as oversampling, undersampling, or using cost-sensitive learning.    
+-Optimize computational resources and training times by leveraging scalable solutions like Apache Spark or distributed computing.
+-Seek clarity on column names to potentially merge related variables, inform feature engineering, and improve model interpretability.  
+## #Repository Contents
 README.md: This file, containing an overview of the project and instructions.
 code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
 presentation/: Folder containing the project presentation slides.
 
 
 ## Challenges Faced
-Sparsity of the dataset
-A large number of missing values
-Imbalanced 'isFraud' variable
-Dataset size and complexity made hyperparameter tuning
+-Sparsity of the dataset
+-A large number of missing values
+-Imbalanced 'isFraud' variable
+-Dataset size and complexity made hyperparameter tuning
 
 ## Repository Contents
-README.md: This file, containing an overview of the project and instructions.
-code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
-presentation/: Folder containing the project presentation slides.
+-README.md: This file, containing an overview of the project and instructions.
+-code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
+-presentation/: Folder containing the project presentation slides.
 ## Google-Drive-Data-Folder"
-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.https://drive.google.com/drive/folders/18LUIIgHwlOQ5ks5DswfnHTXm680d9mxk</a>
+-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this -Google Drive folder.https://drive.google.com/drive/folders/18LUIIgHwlOQ5ks5DswfnHTXm680d9mxk</a>
 
 
