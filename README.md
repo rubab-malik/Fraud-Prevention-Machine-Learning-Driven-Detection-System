@@ -134,10 +134,10 @@ The repository is organized into the following directories and files:
 **Streamlit App code:**  
   - Folder containing the Streamlit app code for deploying the XGBoost classifier.  
   
-**Presentations Slides **  
+**Presentations Slides**  
   - Predicting Fraudulent Online Transactions.pdf: PDF file containing the presentation slides.  
   
-**Images: **  
+**Images:**  
   - Folder containing images used in the project.  
   
 **SQL files:**  
@@ -153,6 +153,6 @@ The repository is organized into the following directories and files:
   - Jupyter notebook containing the cleaned data script.  
 
 ## Google-Drive-Data-Folder"
-- Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this [Google Drive folder](bit.ly/3z8kZaJ).
+- Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this [Google Drive folder](https://drive.google.com/drive/folders/18LUIIgHwlOQ5ks5DswfnHTXm680d9mxk).
 
 
