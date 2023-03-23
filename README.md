@@ -5,7 +5,8 @@ Machine Learning
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
 </p>
 <p align="center">
-Google Drive Data Folder link:
+**Google Drive Data Folder
+Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.**
 </p>
 
 # Fraud Detection System For Online Transaction
@@ -84,16 +85,16 @@ To prepare the data for modeling, several preprocessing steps are performed:
 #### Feature Scaling
 Feature scaling is performed to normalise the data using the StandardScaler from scikit-learn. This step ensures that all features have the same scale, which helps improve the performance of machine learning models, particularly those sensitive to feature scales, such as gradient-based methods.
 
-####  Model Training and Evaluation
-Several machine learning models are trained and evaluated on the preprocessed data, including:
+####  Model Selection and Evaluation
+The project explores various machine learning models, including:
 
   - Decision Tree
   - AdaBoost
   - Random Forest
   - XGBoost
-The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and accuracy scores. The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.
+The models are trained on a portion of the training data and validated on the remaining data. Model performance is compared using ROC AUC scores and classification report.The XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset.
 
-#### Streamlit Deployment
+#### Model Development with Streamlit 
 In addition to the Jupyter Notebook implementation, the project can be deployed using Streamlit, a popular framework for building data-driven web applications. The Streamlit application can interactively display the performance metrics of different models and show the predictions made by the best-performing model.
 
 To deploy the project with Streamlit, follow these steps:
@@ -109,12 +110,21 @@ To deploy the project with Streamlit, follow these steps:
 
   - Open the web application in the browser using the URL provided by Streamlit. We can interact with the application to explore the dataset, model performance metrics, and predictions made by the best-performing model (XGBoost in this case).
 
-By deploying this project with Streamlit, we create an interactive web application that allows users to explore the data and understand the performance of various models more effectively. 
+#### Key Takeaways
+Request more instances of fraudulent transactions from the organization to improve model training and prediction accuracy.  
+Address imbalanced dataset challenges with techniques such as oversampling, undersampling, or using cost-sensitive learning.    
+Optimize computational resources and training times by leveraging scalable solutions like Apache Spark or distributed computing.
+Seek clarity on column names to potentially merge related variables, inform feature engineering, and improve model interpretability.  
+#### #Repository Contents
+README.md: This file, containing an overview of the project and instructions.
+code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
+presentation/: Folder containing the project presentation slides.
 
-## Results
-After creating some baseline models, the XGBoost classifier demonstrates the best performance, making it the ideal choice for this dataset. 
 
-**Challenges**:
-- Sparsity of the dataset
-- A lot Missing Values
-- Imbalanced isFraud Variable
+## Challenges Faced
+Sparsity of the dataset
+A large number of missing values
+Imbalanced 'isFraud' variable
+Dataset size and complexity made hyperparameter tuning
+
+
