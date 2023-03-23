@@ -2,27 +2,23 @@
 
 #### <p align="center">
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
-##### Can you detect fraud from customer transactions?
-#####  Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
-
-## Google-Drive-Data-Folder"
-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.></a>
 
 ## Applying RandomForest and XGBoost for Fraud Detection and Developed with Streamlit:
 This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
 
 ## Table of Contents
-Introduction
-Data Acquisition and Exploration
-Data Preprocessing
-Model Selection and Evaluation
-****Model Performance Metrics  
-Hyperparameter Tuning  
-****
+Introduction  
+Data Acquisition and Exploration  
+Data Preprocessing  
+Model Selection and Evaluation  
+**Model Performance Metrics**
+**Hyperparameter Tuning**
 Model Development with Streamlit
 Key Takeaways  
-Challenges Faced
+Challenges Faced  
 Repository Contents
+GooGLE-Drive-Data-Folder
+
 
 ## Introduction
 
@@ -89,7 +85,7 @@ To prepare the data for modeling, several preprocessing steps are performed:
 #### Feature Scaling
 Feature scaling is performed to normalise the data using the StandardScaler from scikit-learn. This step ensures that all features have the same scale, which helps improve the performance of machine learning models, particularly those sensitive to feature scales, such as gradient-based methods.
 
-####  Model Selection and Evaluation
+## Model Selection and Evaluation
 The project explores various machine learning models, including:
 
   - Decision Tree
@@ -124,7 +120,7 @@ To deploy the project with Streamlit, follow these steps:
 
   - Open the web application in the browser using the URL provided by Streamlit. We can interact with the application to explore the dataset, model performance metrics, and predictions made by the best-performing model (XGBoost in this case).
 
-#### Key Takeaways
+## Key Takeaways
 Request more instances of fraudulent transactions from the organization to improve model training and prediction accuracy.  
 Address imbalanced dataset challenges with techniques such as oversampling, undersampling, or using cost-sensitive learning.    
 Optimize computational resources and training times by leveraging scalable solutions like Apache Spark or distributed computing.
@@ -141,9 +137,11 @@ A large number of missing values
 Imbalanced 'isFraud' variable
 Dataset size and complexity made hyperparameter tuning
 
-Repository Contents
+## Repository Contents
 README.md: This file, containing an overview of the project and instructions.
 code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
 presentation/: Folder containing the project presentation slides.
+## Google-Drive-Data-Folder"
+Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.></a>
 
 
