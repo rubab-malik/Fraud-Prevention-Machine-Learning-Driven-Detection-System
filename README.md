@@ -142,6 +142,6 @@ README.md: This file, containing an overview of the project and instructions.
 code/: Folder containing the Jupyter notebooks, Python scripts, and Streamlit app code.
 presentation/: Folder containing the project presentation slides.
 ## Google-Drive-Data-Folder"
-Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.></a>
+Due to the large size of the dataset (1.35GB), it is not included in the GitHub repository. You can access the original data files and all other project files in this Google Drive folder.https://drive.google.com/drive/folders/18LUIIgHwlOQ5ks5DswfnHTXm680d9mxk</a>
 
 
