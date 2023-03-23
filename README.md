@@ -4,22 +4,27 @@ Machine Learning
 <p align="center">
   <img src="https://user-images.githubusercontent.com/112173540/225614794-ed8645e6-c6b5-4cea-bfd3-c70c8596f44e.jpg"/>
 </p>
+<p align="center">
+Google Drive Data Folder link:
+</p>
 
-# IEEE-CIS Fraud Detection
+# Fraud Detection System For Online Transaction
 ### Can you detect fraud from customer transactions?
 ### Machine Learning to detect transaction fraud using the IEEE-CIS Fraud Detection
 
-## Fraud Detection Project
+## Applying RandomForest and XGBoost for Fraud Detection and Developed with Streamlit
 This project aims to build a fraud detection system using machine learning techniques to classify transactions as fraudulent or non-fraudulent. The dataset is derived from the IEEE-CIS Fraud Detection Kaggle competition, and various preprocessing steps are performed to ensure optimal model performance. The project compares multiple machine learning models and selects the best one based on performance metrics.
 
 **Table of Contents**
 Introduction
-Dataset Description
+Data Acquisition and Exploration
 Data Preprocessing
 Feature Scaling
-Model Training and Evaluation
-Dependencies
-Running the Project
+Model Selection and Evaluation
+**Model Performance Metrics**
+**Hyperparameter Tuning**
+Model Development with Streamlit
+Key Takeaways
 deployment with streamlit
 
 ## Introduction
